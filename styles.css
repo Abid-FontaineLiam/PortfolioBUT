@@ -1,0 +1,73 @@
+@font-face {
+    font-family: IBMPlexMono;
+    src: url(font/IBMPlexMono-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: IBMPlexMono;
+    src: url(font/IBMPlexMono-Bold.ttf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: IBMPlexMono;
+    src: url(font/IBMPlexMono-BoldItalic.ttf) format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: IBMPlexMono;
+    src: url(font/IBMPlexMono-Italic.ttf) format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+* {
+    font-family: IBMPlexMono;
+    color : #FFFFFF;
+}
+html{
+    background-color: #262d41;
+}
+body {
+    margin-top: 60px; 
+}
+#navBar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #546de5;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    text-align: center;
+    z-index: 2;
+}
+hr {
+    border: none;
+    border-top: 2px solid #FFFFFF;
+    margin: 24px 0;
+}
+
+#text_title{
+    text-align: center;
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    top : 40px;
+    justify-content: left;
+    color : #FFFFFF;
+    background-color: #303952;
+}
+#text_desc{
+    font-size: 14px;
+    text-align: justify;
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#code{}
