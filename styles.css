@@ -66,8 +66,15 @@ hr {
 #text_desc{
     font-size: 14px;
     text-align: justify;
-    max-width: 760px;
+    max-width: 720px;
     margin-left: auto;
     margin-right: auto;
 }
-#code{}
+#text_block{
+    background-color: #4030a8;
+    border-radius: 0;
+    border: 1px solid #000000;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#code_block{}
