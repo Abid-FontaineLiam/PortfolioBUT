@@ -8,7 +8,6 @@
     <nav id="navBar">
         <a href="index.html">Home</a>
         <a href="projet.html">Projet</a>
-        <a href="terminal.html">Terminal</a>
     </nav>
 </head>
 <body>
@@ -21,12 +20,28 @@
                     <a href="https://github.com/ValentinMICHELiutnfc/SAE-0506" target="_blank" style="background-color : #000000;">GitHub : SAE-0506</a>
                     <a href="https://valentinmicheliutnfc.github.io/SAE-0506/" target="_blank" style="background-color : #000000;">Site web : Ankama</a>
                     <br><br>
-                    Ce fut le premier projet que j'ai entrepris au sein du BUT.
                     Le principe était d'entreprendre la construction d'un site web
-                    pour le compte d'une entreprise ici <u>Ankama</u>. En outre c'était un
-                    simple travail de collaboration et d'organisation pour fournir au client
-                    les différents outils nécessaires à la création de son site, par exemple
-                    le "WireFrame", le "Style Tiles" et l'ensemble des palette de couleurs utiliser.
+                    pour le compte d'une entreprise ici <u>Ankama</u>. En outre à traver
+                    divers procédé de communication avec le client nous avons pu fonder la charte 
+                    graphique du site, puis grace a l'utilisation de HTML, de CSS nous avions pu
+                    de mettr en oeuvre. Avec d'abord le choix de la palette de couleur, puis avec la
+                    création d'un Zoning, qui consiste a pouvoir placer les éléments principaux<br>
+                    <button id="button" style="margin-top:10px;" onclick="toggleImage('zoningImage')">Afficher/Masquer le Zoning</button>
+                    <div id="zoningImage" style="display:none;">
+                        <img src="img/Zoning Page d'Accueil n°1.png" alt="Zoning du site Ankama" style="margin-top:10px; max-width:100%; height:auto;">
+                    </div>
+                    Et puis il y avait la création d'un Design simple qui venait aboutir les idées déja 
+                    représenter dans le Zoning que l'on appele plus généralement un WireFrame. Ici il et
+                    important d'expliquer que un carousel et juste une sucession d'image défilant au fil des
+                    minutes. En outre, le résulta final de la phase de préconstruction du site était mise en place<br>
+                    <button id="button" style="margin-top:10px;" onclick="toggleImage('wireframeImage')">Afficher/Masquer le WireFrame</button>
+                    <div id="wireframeImage" style="display: none;">
+                        <img src="img/Page Accueil n°2.png" atl="WireFrame du site Ankama" style="margin-top:10px; max-width: 100%; height: auto;">
+                    </div>
+                    <br>
+                    Quand à la construction du site web nous avions utiliser le framework bootstrap pour faire
+                    le carousel. Outre le simple développement d'un site web, la composante la plus importante dans
+                    ce projet était la communication avec le client.
                 </p>
             </div>
             <hr>
@@ -34,11 +49,66 @@
                 <p>
                     <a href="https://github.com/noaleenknegt/SAE34-14" target="_blank" style="background-color: black;">GitHub : SAE34-14</a>
                     <br><br>
-                    Le travail initial était de crée le début d'un site web marchant proposant la vente 
-                    de diverse gant ( <em>un thème récurent pour le reste des SAÉ</em> ) auquelle
-                    nous devions déployer les bases de ce site web sur le <em>frontend</em> avec la
-                    programmation de site classique HTML, CSS et <em>backend</em> avec Python en utilisant
-                    le module Flask.
+                    Le travail initial consistait à créer les bases d’un site web marchand proposant la vente de différents types de gants appelé <em>Frip'Kil</em>. 
+                    Pour cela, nous avons développé l’ensemble des composants nécessaires à la mise en place d’une plateforme e-commerce fonctionnelle. 
+                    Dans un premier temps, nous avons conçu la base de données en SQL, en utilisant MariaDB :<br>
+                    <button id="button" style="margin-top:10px;" onclick="toggleImage('BDDImage')">Afficher/Masquer la Base de données</button>
+                    <div id="BDDImage" style="display: none;">
+                        <img src="img/BDD_gant_v1.png" atl="Base de données SAE34-14" style="margin-top:10px; max-width: 100%; height: auto;">
+                    </div>
+                    <br>
+                    Celle-ci reposait sur plusieurs entités clés : <strong>TypeVetement, Rang, Client, Benne</strong>, ainsi que leurs relations. 
+                    Grâce à cette structure, nous avons pu modéliser les interactions et les éléments essentiels au fonctionnement 
+                    d’une boutique en ligne.
+                </p>
+                <p> 
+                    Il est important de souligner un choix particulier concernant l’entité Date. Habituellement, 
+                    la date est un simple attribut au sein d’autres entités. Cependant, dans notre projet, nous l’avons modélisée comme une 
+                    entité à part entière (appelée ici <em>EntitéDate</em>), car elle est utilisée pour assurer une gestion de l’historique des événements 
+                    (comme les achats, les connexions, ou les changements de statut). Cela permet une meilleure traçabilité et une plus grande 
+                    flexibilité dans la gestion des données temporelles.
+                </p>
+                <p>
+                    Une fois la base de données créée et bien structurée, nous avons pu commencer le développement du site.
+                    Pour gérer le <strong>back-end</strong>, nous avons choisi d’utiliser <em>Flask</em>, un framework Python. 
+                    Ce choix s’explique principalement par sa simplicité d’utilisation et sa syntaxe intuitive, ce qui nous a permis 
+                    de nous concentrer sur la logique métier sans être freinés par la complexité du framework. Grâce à Flask, nous avons pu mettre 
+                    en place les différentes routes (comme les pages d’accueil, de produits ou de panier), gérer les requêtes vers la base de données, 
+                    et structurer le site de manière claire. Côté front-end, nous avons utilisé les langages de base du web, HTML et CSS, en nous appuyant sur Bootstrap
+                    pour faciliter la mise en page. Bootstrap nous a permis d’appliquer rapidement un design propre et responsive (adapté à tous les formats d’écran) sans 
+                    devoir créer tous les styles manuellement. Cela nous a permis de gagner du temps tout en obtenant un rendu visuel cohérent et agréable.
+                    À la fin de cette phase, nous avions un site fonctionnel avec une interface simple, capable d’afficher des produits, de gérer des utilisateurs, 
+                    et de simuler les premières étapes d’un processus d’achat.<br>
+                    <button id="button" style="margin-top:10px;" onclick="toggleImage('FripKilImage')">Afficher/Masquer Vue Site</button>
+                    <div id="FripKilImage" style="display: none;">
+                        <img src="img/FripKil.png" atl="Frip'Kil SAE34-14" style="margin-top:10px; max-width: 100%; height: auto;">
+                    </div>
+                    <br>
+                    Dans ce projet, ma mission principale était de créer et de mettre en place un système de réductions appliquées à tous les produits 
+                    disponibles sur le site. Ainsi voila un exemple de code python/Flask fait pour la SAÉ :<br>
+                    <button id="button" style="margin-top:10px;" onclick="toggleImage('ReductionImage')">Afficher/Masquer Vue Backend</button>
+                    <div id="ReductionImage" style="display: none;">
+                        <img src="img/Reduc1.png" atl="Reduction 1 SAE34-14" style="margin-top:10px; max-width: 100%; height: auto;">
+                        <img src="img/Reduc2.png" atl="Reduction 2 SAE34-14" style="margin-top:10px; max-width: 100%; height: auto;">
+                    </div>
+                    <br>
+                    Les commandes SQL étaient directement exécutées via Python pour interagir avec la base de données.
+                    Selon le contexte, deux cas de figure se présentaient :
+                    <ul>
+                        <li>
+                            <strong>Affichage des réductions</strong> : les résultats des requêtes SQL étaient stockés dans une liste Python, ce qui permettait 
+                            ensuite d’afficher toutes les réductions disponibles sur une page dédiée.
+                        </li>
+                        <li>
+                            <strong>Modification des réductions</strong> : lors de l’ajout, la suppression ou l’édition d’une réduction, l’ordre des 
+                            données dans la base pouvait changer. Il fallait alors bien gérer les opérations UPDATE ou DELETE, en ciblant précisément les lignes concernées.
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    Avec du recul, j’ai compris l’importance de limiter les modifications dans la base de données uniquement aux éléments réellement concernés, afin d’éviter 
+                    des effets de bord ou des pertes de performance. En repensant la structure, je pense que l’utilisation de vues (views) en SQL aurait été plus adaptée pour 
+                    certains cas, notamment pour simplifier les requêtes complexes ou les affichages filtrés, tout en améliorant la lisibilité du code et la maintenance du projet.
                 </p>
             </div>
             <hr>
@@ -46,13 +116,44 @@
                 <p>
                     <a href="https://github.com/benjond/SAE-01-02" target="_blank" style="background-color: #000000;">GitHub : SAE0102</a>
                     <br><br>
-                    Le résulta final était de créer un programme qui pouvais modifier la tonalité des pistes audio
-                    données en entrées en fonction de la valeur de pitch. En outre, la manipulation d'audio marche pas
-                    la transformation de signaux et la meilleur méthode de faire cela était d'utiliser la 
-                    <a href="https://fr.wikipedia.org/wiki/Transformation_de_Fourier_rapide" target="_blank">Transformation
-                    de Fourier Rapide</a> en simplifier.De plus le programme devait avoir une
-                    interface graphique utilisant la librairie <em>StdDraw</em>. Pour ainsi dire ce fut l'un des
-                    plus difficile travaux a rendre que j'eu a faire.
+                    Le résultat final de ce projet était de développer un programme capable de modifier la tonalité de pistes audio fournies en entrée, 
+                    en fonction d’une valeur de pitch choisie par l’utilisateur. Le traitement audio repose sur la manipulation de signaux numériques. Pour cela, 
+                    la méthode la plus adaptée a été d’utiliser une version simplifiée de la Transformation de Fourier Rapide 
+                    ( <a href="https://fr.wikipedia.org/wiki/Transformation_de_Fourier_rapide">FFT - Fast Fourier Transform</a> ). Mais d'autre algorithmes était à implémenter
+                    soit de simple dilatation avec ou sans overlapping, pour arrivé a des résultas de plus en plus satifaisant.
+                    L’objectif était donc de comprendre le fonctionnement de ces algorithmes, d’implémenter des prototypes fonctionnels, puis de comparer leur 
+                    efficacité en termes de qualité audio, de performance, et de compatibilité avec une application temps réel. <br>
+                    <button id="button" style="margin-top:10px;" onclick="toggleImage('CrossCorrelationPDF')">Afficher/Masquer l'Algorithme de la Corrélation Croisée (PDF)</button>
+                    <div id="CrossCorrelationPDF" style="display: none;">
+                        <embed src="img/Algorithm of the Cross Correlation.pdf" type="application/pdf" width="100%" height="600px" />
+                    </div>
+                    <br>
+                    En plus de la logique de traitement du son, le programme devait aussi inclure une interface graphique, que nous avons réalisée à l’aide de la bibliothèque 
+                    <a href="https://introcs.cs.princeton.edu/java/stdlib/StdDraw.java.html">StdDraw</a>. Cette interface permettait à l’utilisateur 
+                    de définir une valeur de pitch, et de lancer le traitement avec un retour visuel simple. La complexité de cette initialisation visuel était
+                    de géré le buffer I/O car au bout d'un moment celui-ci confondait les inputs. De plus il faulait pouvoir gérer chaque possibilités que l'application 
+                    proposait :<br>
+                    <button id="button" style="margin-top:10px;" onclick="toggleImage('PauvocoderImage')">Afficher/Masquer Vue Application + Code</button>
+                    <div id="PauvocoderImage" style="display: none;">
+                        <img src="img/Pauvocoder1.png" atl="Pauvocoder 1 SAE0102" style="margin-top:10px; max-width: 100%; height: auto;">
+                        <img src="img/Pauvocoder2.png" atl="Pauvocoder 2 SAE0102" style="margin-top:10px; max-width: 100%; height: auto;">
+                        <img src="img/Pauvocoder3.png" alt="Pauvocoder 3 SAE0102" style="margin-top:10px; max-width: 100%; height: auto;">
+                    </div>
+                    <br>
+                    Le code ci-dessus prend une piste sonore en entrée et commence par la découper en une série de valeurs individuelles codées en 64 bits (double précision), 
+                    avec l’application d’un facteur de dilatation. Ce facteur permet de contrôler la vitesse de lecture ou de transformation du signal.
+                    Ensuite, le programme initialise un tableau vide correspondant à la longueur attendue du signal en sortie, en fonction du facteur de dilatation et 
+                    d’un paramètre appelé jump (pas de saut entre les segments audio traités). Il reprend également un ensemble de constantes définies précédemment, nécessaires pour assurer la 
+                    cohérence du traitement (valeurs limites, taille des blocs, etc.). Le cœur du traitement repose sur une transformation fréquentielle via la FFT (Fast Fourier Transform). 
+                    Cette technique permet de convertir le signal audio du domaine temporel au domaine fréquentiel, ce qui facilite la modification de la tonalité ou de la vitesse sans affecter directement la forme d’onde. 
+                    Le programme utilise au passage certaines méthodes natives de Java, comme Double.NEGATIVE_INFINITY, qui représente une constante normalisée selon le standard IEEE 754 (valeur hexadécimale : 0xFFF0000000000000). 
+                    Cette constante est souvent utilisée pour initialiser des comparaisons de minimum ou de maximum dans les algorithmes de traitement numérique. En fin de chaîne, le traitement aboutit à la reconstruction d’une piste audio modifiée, 
+                    notamment en termes de vitesse de lecture. Le résultat est un son plus lent ou plus rapide, en fonction du facteur initial, sans altérer gravement la qualité grâce à la transformation fréquentielle.
+                    <p>
+                        Honnêtement, ce projet a été l’un des plus complexes à réaliser. Il combinait des notions avancées en traitement du signal, en programmation graphique, 
+                        et en gestion de fichiers audio. Mais malgré les difficultés, il a été extrêmement formateur, notamment sur l’importance de bien comprendre le lien 
+                        entre mathématiques et programmation dans des cas concrets comme celui-ci.
+                    </p>
                 </p>
             </div>
             <hr>
@@ -60,10 +161,49 @@
                 <p>
                    <a href="https://github.com/benjond/SAE-3-4-5" target="_blank" style="background-color: #000000;">GitHub : SAE-3-4-5</a> 
                    <br><br>
-                   Le but attendue était de créer un site web marchant 
+                   Le but attendue était de créer un site web marchant aillant des bases de la SAE34-14.
+                   Donc les aspect techniques et les différents languages utiliser on été les mêmes. Cependant la base
+                   de programmation n'était pas la même avec un model pré-fait auquel l'on devait travailler avec.
+                   Ainsi, le site à pour nom <em>AiléGant</em> et c'est un site de vente de gant plus avancé.
+                   Les parties que je devais mettre en place était :
+                   <ul>
+                    <li>
+                        <strong>Le Filtre :</strong> En effet chaque gants avait un attribue qui le placait dans un type
+                        d'utlisation (Jardinage, Golf, Moto et Ski)
+                    </li>
+                    <li>
+                        <strong>Les commentaires et notes :</strong> Permet au utilisateur d'ajouter une notes et un commentaire sur 
+                        un gant après son achat.
+                    </li>
+                   </ul>
                 </p>
+                <p>
+                    Ainsi le principe d'intéraction avec la base de données et du site et sensiblement toujours le même.
+                    L'application Python avec le module <em>Flask</em>, va intéragir avec la base de donnéees.<br>
+                    <button id="button" style="margin-top:10px;" onclick="toggleImage('AileGantImage')">Afficher/Masquer Vue Application + Code</button>
+                    <div id="AileGantImage" style="display: none;">
+                        <img src="img/AileGant 1.png" atl="AileGant 1 SAE-3-4-5" style="margin-top:10px; max-width: 100%; height: auto;">
+                        <img src="img/AileGant 2.png" atl="AileGant 2 SAE-3-4-5" style="margin-top:10px; max-width: 100%; height: auto;">
+                        <img src="img/AileGant 3.png" alt="AileGant 3 SAE-3-4-5" style="margin-top:10px; max-width: 100%; height: auto;">
+                        <img src="img/AileGant 4.png" alt="AileGant 4 SAE-3-4-5" style="margin-top:10px; max-width: 100%; height: auto;">
+                    </div> 
+                </p>
+                <p>
+                    Le code ci-dessus montre comment afficher l'ensemble des commentaires disponibles pour un article donné. La première étape consiste à initialiser 
+                    des listes qui serviront à stocker les résultats renvoyés par les requêtes SQL. Ensuite, le programme formule les commandes SQL nécessaires pour interroger 
+                    la base de données, en sélectionnant toutes les entrées pertinentes dans la table des commentaires. Ces requêtes peuvent être personnalisées selon les paramètres reçus (comme l’ID de l’article). 
+                    Une fois la requête exécutée avec fetch() (ou fetchall()), les résultats sont stockés dans une variable, puis transmis au moteur de rendu de Flask via la fonction render_template().
+                    Cela permet d’afficher dynamiquement les commentaires sur le front-end, au sein d’un fichier HTML.
+                    En ce qui concerne les notes, le fonctionnement général reste similaire à celui des commentaires : on interroge la base de données, on récupère les résultats, puis on les affiche via Flask. 
+                    Cependant, la requête SQL diffère légèrement, car au lieu de simplement récupérer des données, elle effectue des calculs agrégés.
+                    Plus précisément, cette requête permet de compter le nombre total de commentaires associés à un article et de calculer la moyenne des notes attribuées.
+                    Ces valeurs sont ensuite envoyées au front-end afin d’être affichées sous forme d’indicateurs visuels, comme une note moyenne en étoiles ou un nombre total d’avis.
+                </p>
+            </div>
+            <hr>
             </div>
         </div>
     </div>
 </body>
+<script src="script/script.js"></script>
 </html>

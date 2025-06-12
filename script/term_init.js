@@ -33,7 +33,7 @@ function clearAndExpandTerminalScene() {
         terminalScene.style.left = '50%';
         terminalScene.style.transform = 'translate(-50%, -50%)';
         terminalScene.style.width = '99%';
-        terminalScene.style.height = '98%';
+        terminalScene.style.height = '90%';
         terminalScene.style.background = '#000';
         terminalScene.style.border = "1px solid #00FF00";
         terminalScene.style.margin = '0';
@@ -44,9 +44,13 @@ function clearAndExpandTerminalScene() {
         terminalScene.style.justifyContent = 'center';        
     }
 }
+
+/**
+ * Main Part :
+ */
 const textElement = document.createElement('p');
 const placeholder = document.getElementById('init_placeholder');
-startTextLoadingAnimation(textElement,"Bienvenu");
+startTextLoadingAnimation(textElement,"Bienvenue");
 if (placeholder) {
     placeholder.appendChild(textElement);
     const asciiBar = document.createElement('pre');

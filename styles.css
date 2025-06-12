@@ -43,6 +43,30 @@ hr {
     border-top: 2px solid #FFFFFF;
     margin: 24px 0;
 }
+
+footer{
+    position: fixed; 
+    left: 0; 
+    bottom: 0; 
+    width: 100%; 
+    text-align: center; 
+    padding: 10px 0; 
+    background-color: #002B36;
+}
+
+#button{
+  background-color: #EB3678;
+  border: none;
+  color: white;
+  padding: 13px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
 #navBar {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -75,7 +99,7 @@ hr {
     margin-right : auto;
 }
 #text_block{
-    background-color: #FB773C;
+    background-color: #3c4453;
     border-radius: 0;
     border: 1px solid #000000;
     padding-left: 10px;
